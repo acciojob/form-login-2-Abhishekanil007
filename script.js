@@ -14,3 +14,10 @@ function handleSubmit(event)
 
 
 document.getElementById('myform').addEventListener('submit' , handleSubmit);
+
+cy.on('window:alert', alertText => {
+  expect(alertText).to.contain('First Name: John');
+  expect(alertText).to.contain('Last Name: Doe');
+  expect(alertText).to.contain('Phone Number: 1234567890');
+  expect(alertText).to.contain('Email: john.doe@example.com');
+});
