@@ -9,7 +9,7 @@ function handleSubmit(event)
 		var phone = document.getElementById('phone').value;
 		var email = document.getElementById('email').value;
 
-		alert('First name: ' + fname + '\nLast Name: ' + lname + '\nPhone Number: ' + phone + '\nEmail: ' + email);
+		alert('First Name: ' + fname + '\nLast Name: ' + lname + '\nPhone Number: ' + phone + '\nEmail: ' + email);
 	}
 
 
